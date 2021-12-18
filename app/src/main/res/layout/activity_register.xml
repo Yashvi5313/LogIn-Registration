@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:text="Register"
+            tools:ignore="UnknownId" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invited by a friend?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEnterCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCode"
+                android:text=" Enter code"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Already a user?"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtLoginclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtUser"
+                android:layout_alignParentRight="true"
+                android:text=" Log in"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
